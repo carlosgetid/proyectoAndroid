@@ -1,3 +1,9 @@
-Integrantes:
+# "Nombre del proyecto"
+Proyecto de Cibertec - Desarrollo de Aplicaciones Moviles
 
-Manuel Benavides
+## integrantes:
+- Manuel Benavides
+- Pablo Saravia
+
+
+
