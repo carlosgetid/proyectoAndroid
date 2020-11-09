@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="35dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Bienvenido a"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="Truyki App"
+                android:textColor="#0C0C0C"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="387dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="80dp"
+        android:drawableLeft="@drawable/usuario"
+        android:hint="Usuario" />
+
+    <EditText
+        android:id="@+id/edittext1"
+        android:layout_width="387dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11.5dp"
+        android:drawableLeft="@drawable/contrasena"
+        android:hint="Contraseña" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:text="Recordarme" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:background="#2196F3"
+        android:text="Log in"
+        android:textColor="#F8F8F8" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="197dp"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:background="#F3F6F8"
+            android:gravity="center"
+            android:text="Regístrate"
+            android:textColor="#03A9F4" />
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="211dp"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:background="#F3F6F8"
+            android:gravity="center"
+            android:text="¿Olvidaste tu contraseña?"
+            android:textColor="#03A9F4" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
