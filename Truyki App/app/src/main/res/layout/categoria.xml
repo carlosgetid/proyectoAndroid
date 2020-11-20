@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        style="@style/CardView.Light"
+        android:layout_width="match_parent"
+        android:layout_height="692dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="8dp"
+        android:clipToPadding="true"
+        android:orientation="horizontal"
+        card_view:contentPadding="5dp">
+
+        <ImageView
+            android:id="@+id/imageCat1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/notificacion" />
+        <TextView
+            android:id="@+id/cat1"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="120dp"
+            android:text="Categoría 1" />
+
+        <ImageView
+            android:id="@+id/imageCat2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/correo" />
+        <TextView
+            android:id="@+id/cat2"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="120dp"
+            android:text="Categoría 2" />
+
+        <ImageView
+            android:id="@+id/imageCat3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/web" />
+        <TextView
+            android:id="@+id/cat3"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="275dp"
+            android:layout_marginTop="120dp"
+            android:text="Categoría 3" />
+        <ImageView
+            android:id="@+id/imageCat4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/notificacion" />
+        <TextView
+            android:id="@+id/cat4"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="300dp"
+            android:text="Categoría 4" />
+
+        <ImageView
+            android:id="@+id/imageCat5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/correo" />
+        <TextView
+            android:id="@+id/cat5"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="300dp"
+            android:text="Categoría 5" />
+
+        <ImageView
+            android:id="@+id/imageCat6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/web" />
+        <TextView
+            android:id="@+id/cat6"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="275dp"
+            android:layout_marginTop="300dp"
+            android:text="Categoría 6" />
+        <ImageView
+            android:id="@+id/imageCat7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="380dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/notificacion" />
+        <TextView
+            android:id="@+id/cat7"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="480dp"
+            android:text="Categoría 4" />
+
+        <ImageView
+            android:id="@+id/imageCat8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="380dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/correo" />
+        <TextView
+            android:id="@+id/cat8"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="480dp"
+            android:text="Categoría 5" />
+
+        <ImageView
+            android:id="@+id/imageCat9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="380dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/web" />
+        <TextView
+            android:id="@+id/cat9"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="275dp"
+            android:layout_marginTop="480dp"
+            android:text="Categoría 6" />
+        <ImageView
+            android:id="@+id/imageCat10"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="550dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/notificacion" />
+        <TextView
+            android:id="@+id/cat10"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="650dp"
+            android:text="Categoría 4" />
+
+        <ImageView
+            android:id="@+id/imageCat11"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="550dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/correo" />
+        <TextView
+            android:id="@+id/cat11"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="650dp"
+            android:text="Categoría 5" />
+
+        <ImageView
+            android:id="@+id/imageCat12"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="550dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/web" />
+        <TextView
+            android:id="@+id/cat12"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="275dp"
+            android:layout_marginTop="650dp"
+            android:text="Categoría 6" />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
