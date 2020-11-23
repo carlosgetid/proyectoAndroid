@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/inicio"
+            android:icon="@drawable/inicio"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/categoria"
+            android:icon="@drawable/categoria"
+            android:title="Categorias" />
+        <item
+            android:id="@+id/servicios"
+            android:icon="@drawable/servicio_anterior"
+            android:title="Servicios anteriores" />
+        <item
+            android:id="@+id/favoritos"
+            android:icon="@drawable/favoritos"
+            android:title="Favoritos" />
+        <item
+            android:id="@+id/informacion"
+            android:icon="@drawable/informacion"
+            android:title="Informacion" />
+        <item
+            android:id="@+id/privacidad"
+            android:icon="@drawable/privacidad"
+            android:title="Politicas de Privacidad" />
+    </group>
+</menu>
