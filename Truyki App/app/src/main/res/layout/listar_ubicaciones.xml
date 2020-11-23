@@ -3,6 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/borde"
+    android:layout_margin="8sp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
@@ -15,8 +17,8 @@
             android:id="@+id/imageView2"
             android:layout_width="130dp"
             android:layout_height="100dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="35dp"
             app:srcCompat="@drawable/thumbnail"/>
 
         <TextView
@@ -26,12 +28,13 @@
             android:gravity="center_vertical"
             android:text="NOMBRE APELLIDO"></TextView>
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="50dp"
-            android:layout_height="40dp"
-            android:layout_margin="10dp"
-            app:srcCompat="@drawable/close" />
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/close">
+        </Button>
 
 
     </LinearLayout>
@@ -39,8 +42,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingRight="20dp"
-        android:paddingLeft="20dp"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp"
+        android:layout_marginBottom="20dp"
         android:orientation="horizontal">
         <LinearLayout
             android:layout_width="wrap_content"
@@ -81,8 +85,13 @@
                 android:gravity="center_vertical"
                 android:text="email.domain.com"></TextView>
         </LinearLayout>
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"></TableLayout>
     </LinearLayout>
+
+    <ListView
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/lvlUbicaciones"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
 </LinearLayout>
