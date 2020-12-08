@@ -3,8 +3,14 @@
     class CategoriaBean
     {
         public $codigo;
-        public $nombre;
+        public $imagen;
+		public $nombre;
         
+		
+		function getImagen() {
+            return $this->imagen;
+        }
+
         function getCodigo() {
             return $this->codigo;
         }
@@ -19,6 +25,9 @@
 
         function setNombre($nombre) {
             $this->nombre = $nombre;
+        }
+		function setImagen($imagen) {
+            $this->imagen = $imagen;
         }
         
     }

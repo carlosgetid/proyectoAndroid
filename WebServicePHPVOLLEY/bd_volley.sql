@@ -31,6 +31,7 @@ USE bd_volley;
 
 CREATE TABLE `categoria` (
   `Id_Categoria` int(11) NOT NULL,
+   `Imagen_Categoria` varchar(99) not null, 
   `Nombre_Categoria` varchar(99) COLLATE utf8_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
@@ -38,12 +39,12 @@ CREATE TABLE `categoria` (
 -- Volcado de datos para la tabla `categoria`
 --
 
-INSERT INTO `categoria` (`Id_Categoria`, `Nombre_Categoria`) VALUES
-(1, 'Swissotel Hotel'),
-(2, 'Hotel Diamond'),
-(3, 'Hotel Sheraton'),
-(4, 'American Hotel'),
-(5, 'Bahia Hotel');
+INSERT INTO `categoria` (`Id_Categoria`, `Imagen_Categoria`, `Nombre_Categoria`) VALUES
+(1,'fontaneros.jpg', 'Fontaneros'),
+(2,'electricidad.jpg', 'Electricidad'),
+(3,'jardineria.jpg', 'Jardineria'),
+(4,'pintor.jpg','Pintor'),
+(5,'impresoras.jpg', 'Impresoras');
 
 -- --------------------------------------------------------
 
