@@ -80,19 +80,19 @@ INSERT INTO `producto` (`Id_Producto`, `Nombre_Producto`, `Precio_Producto`, `De
 --
 
 CREATE TABLE `usuario` (
-  `Id_Usuario` int(11) NOT NULL,
+  `Id_Usuario` int(11) NOT NULL primary key auto_increment,
   `Usuario` varchar(99) COLLATE utf8_spanish_ci NOT NULL,
   `Password` varchar(99) COLLATE utf8_spanish_ci NOT NULL,
   `Activo` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+) ;
 
 --
 -- Volcado de datos para la tabla `usuario`
 --
 
 INSERT INTO `usuario` (`Id_Usuario`, `Usuario`, `Password`, `Activo`) VALUES
-(1, 'PSARAVIA', '123', 1),
-(2, 'CGOMEZ', '123', 1);
+(null, 'PSARAVIA', '123', 1),
+(null, 'CGOMEZ', '123', 1);
 
 -- --------------------------------------------------------
 
@@ -128,8 +128,7 @@ ALTER TABLE `producto`
 --
 -- Indices de la tabla `usuario`
 --
-ALTER TABLE `usuario`
-  ADD PRIMARY KEY (`Id_Usuario`);
+
 
 --
 -- Indices de la tabla `venta`

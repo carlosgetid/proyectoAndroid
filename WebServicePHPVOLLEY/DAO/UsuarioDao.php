@@ -44,6 +44,40 @@ require_once '../BEAN/UsuarioBean.php';
                                     }
                  return $LISTA;                   
                 }
+
+
+
+                public function RegistrarUsuario(UsuarioBean $objusuariobean)
+                {
+            try {
+                
+                $cn = new ConexionBD();
+                    $cnx = $cn->getConexionBD();
+                    
+                    $sql = " INSERT INTO `usuario` (`Usuario`, `Password`, `Activo`) VALUES (?,?,?); ";
+                    
+                    $stmt = $cnx->prepare($sql);
+                    $stmt->bind_param('sss',$objusuariobean->Usuario,$objusuariobean->Password,$objusuariobean->Activo);
+                    $stmt->execute();
+                    
+                    $response = $stmt->get_result();
+                    $estado = 0;
+                    if(mysqli_stmt_affected_rows($stmt)>0)
+                        {
+                                $estado = 1;
+                                
+                                
+                                
+                        }else
+                            {
+                            $estado = 0;
+                            }
+                
+}               catch (Exception $exc) {
+                echo $exc->getTraceAsString();
+                                }
+                          return $estado;
+                        }
 }
 
 ?>

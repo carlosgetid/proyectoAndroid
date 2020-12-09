@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -21,6 +22,7 @@ public class LoginActivity extends AppCompatActivity {
 
     EditText edtUser, edtPass;
     Button btnIngresar;
+    TextView
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

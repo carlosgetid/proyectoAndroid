@@ -29,6 +29,23 @@ switch ($op)
         }
     case "2":
         {
+            $usuario = $_GET['usuario'];
+            $password = $_GET['password'];
+            $activo = $_GET['activo'];
+            
+            $objusubean = new UsuarioBean();
+            $objusudao = new UsuarioDao();
+            
+            $objusubean->setUsuario($usuario);
+            $objusubean->setPassword($password);
+            $objusubean->setActivo($activo);
+            
+            $LISTA = $objusudao->RegistrarUsuario($objusubean);
+            
+            header('Content-Type: application/json; charset=utf-8');
+            
+            echo json_encode($LISTA,JSON_UNESCAPED_UNICODE);
+           
             break;
         }
     case "3":

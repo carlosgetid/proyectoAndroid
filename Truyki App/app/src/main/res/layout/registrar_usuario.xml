@@ -67,6 +67,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/txtNombres"
             android:layout_marginStart="30dp"
             android:layout_marginLeft="30dp"
             android:background="@drawable/estilos" />
@@ -93,6 +94,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
+            android:id="@+id/txtApellidos"
             android:layout_marginLeft="30dp"
             android:background="@drawable/estilos" />
 
@@ -118,6 +120,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
+            android:id="@+id/txtEmail"
             android:layout_marginLeft="30dp"
             android:background="@drawable/estilos" />
 
@@ -143,6 +146,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
+            android:id="@+id/txtContrasena"
             android:layout_marginLeft="30dp"
             android:background="@drawable/estilos"
             android:inputType="textPassword" />
@@ -169,6 +173,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
+            android:id="@+id/txtReContrasena"
             android:layout_marginLeft="30dp"
             android:background="@drawable/estilos"
             android:inputType="textPassword" />
@@ -194,6 +199,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/txtCelular"
             android:layout_marginStart="30dp"
             android:layout_marginLeft="30dp"
             android:background="@drawable/estilos" />
