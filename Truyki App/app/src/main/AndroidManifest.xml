@@ -22,8 +22,9 @@
         <activity android:name=".MainActivity"> </activity>
         <activity android:name=".ListarUbicaciones"></activity>
         <activity android:name=".PrincipalActivity"></activity>
+        <activity android:name=".ListCategoriaActivity"></activity>
         <activity android:name=".ListFavoriteActivity"></activity>
-        <activity android:name=".LoginActivity">LoginActivity
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
