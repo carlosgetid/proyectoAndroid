@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,7 +22,7 @@ import java.util.Map;
 
 public class RegistrarUsuario extends AppCompatActivity {
 
-    TextView txtNombres, txtApellidos, txtEmail, txtContrasena, txtReContrasena, txtCelular;
+    EditText txtNombres, txtApellidos, txtEmail, txtContrasena, txtReContrasena, txtCelular;
     Button btnRegistrar;
 
     @Override
@@ -29,21 +30,28 @@ public class RegistrarUsuario extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.registrar_usuario);
 
-        txtNombres = (TextView) findViewById(R.id.txtNombres);
-        txtApellidos = (TextView) findViewById(R.id.txtApellidos);
-        txtEmail = (TextView) findViewById(R.id.txtEmail);
-        txtContrasena = (TextView) findViewById(R.id.txtContrasena);
-        txtReContrasena = (TextView) findViewById(R.id.txtReContrasena);
-        txtCelular = (TextView) findViewById(R.id.txtCelular);
+        txtNombres = (EditText) findViewById(R.id.txtNombres);
+        txtApellidos = (EditText) findViewById(R.id.txtApellidos);
+        txtEmail = (EditText) findViewById(R.id.txtEmail);
+        txtContrasena = (EditText) findViewById(R.id.txtContrasena);
+        txtReContrasena = (EditText) findViewById(R.id.txtReContrasena);
+        txtCelular = (EditText) findViewById(R.id.txtCelular);
 
         btnRegistrar = (Button) findViewById(R.id.btnIngresar);
 
         btnRegistrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                registrarUsuario("aaaaa","ppppp", "1");
+                registrarUsuario(ObtenerUsuario(), ObtenerPassword(), "1");
             }
         });
+    }
+
+    public  String ObtenerUsuario(){
+        return txtEmail.getText().toString();
+    }
+    public  String ObtenerPassword(){
+        return txtContrasena.getText().toString();
     }
 
     public  void registrarUsuario(final String user, final String pass, final String activo){

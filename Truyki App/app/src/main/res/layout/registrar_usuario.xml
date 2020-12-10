@@ -47,7 +47,14 @@
         android:text="Formulario de registro"
         android:textAlignment="center"
         android:textStyle="bold" />
-
+    <Button
+        android:layout_width="100dp"
+        android:id="@+id/btnIngresar"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#2196F3"
+        android:textColor="#F8F8F8"
+        android:text="Registrar"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -217,12 +224,6 @@
         android:layout_marginBottom="30dp"
         android:text="He leído y acepto los términos y condiciones" />
 
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:background="#2196F3"
-        android:textColor="#F8F8F8"
-        android:text="Registrar"/>
+
 
 </LinearLayout>

@@ -22,7 +22,7 @@ public class LoginActivity extends AppCompatActivity {
 
     EditText edtUser, edtPass;
     Button btnIngresar;
-    TextView
+    TextView textRegistro;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -32,11 +32,20 @@ public class LoginActivity extends AppCompatActivity {
         edtUser = findViewById(R.id.edtUser);
         edtPass = findViewById(R.id.edtPass);
         btnIngresar = findViewById(R.id.btnIngresar);
+        textRegistro = (TextView) findViewById(R.id.textRegistro);
 
         btnIngresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ValidarUsuario(ObtenerUsuario(),ObtenerPassword());
+            }
+        });
+
+        textRegistro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, RegistrarUsuario.class);
+                startActivity(intent);
             }
         });
     }
